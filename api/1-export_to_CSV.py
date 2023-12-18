@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Records all tasks that are owned by this employee"""
 
+import csv
 import requests
 import sys
-import csv
+
 
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com"
