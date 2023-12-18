@@ -9,7 +9,7 @@ if __name__ == "__main__":
     # return user
     user = requests.get(url + "/users/{}".format(sys.argv[1])).json()
     # return todo filter by userID
-    todos = requests.get(url + "/todos", params={"userID": sys.argv[1]}).json()
+    todos = requests.get(url + "/todos", params={"userId": sys.argv[1]}).json()
     total_tasks = len(todos)
     completed_task = 0
     for todo in todos:
